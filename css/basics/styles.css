@@ -1,0 +1,17 @@
+*{
+/* BOX SIZING */
+  box-sizing: border-box;
+  /* border is accounted into the total width */
+}
+
+.box{
+  color: brown;
+  background-color: orange;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid red;
+
+  /* PADDINGS AND MARGINS */
+  padding: 24px;
+  margin: 10px;
+}
