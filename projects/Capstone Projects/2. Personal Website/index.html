@@ -3,30 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Website</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Deepthi Muthukumar | Web Developer</title>
+
+    <!-- CSS file linking -->
+     <link rel="stylesheet" href="./styles.css">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ms+Madi&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Ms+Madi&family=Rubik:wght@300..900&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header>
-      <h1>I'm Deepthi Muthukumar</h1>
-      <p class="sub-intro">an aspiring web developer :)</p>
-    </header>
-    <div class="midddle-container">
+      <div class="name-content">
+        <h1>I'm Deepthi Muthukumar</h1>
+        <p class="sub-title">an aspiring web developer :)</p>
+      </div>
+
       <div class="intro">
-        <img class="profile-img" src="./assets/deepthi.jpg" alt="" />
+        <img
+          class="profile-img"
+          src="./assets/deepthi.jpg"
+          alt="Deepthi Muthukumar's photo"
+        />
         <h2>Hi there!</h2>
         <p>
           I'm a frontend development enthusiast interested in crafting
-          responsive layouts and building intuitive user experiences. Every line
-          of code is a new opportunity to learn and level up!
+          responsive layouts and intuitive user experiences. Every line of code
+          is a new opportunity to learn and grow!
         </p>
       </div>
+    </header>
+
+    <main>
       <div class="skills">
         <h3>Skills</h3>
         <ul>
@@ -35,6 +48,7 @@
           <li>Responsive design for all screen sizes</li>
           <li>Team collaboration & problem-solving</li>
         </ul>
+
         <h3>What Drives Me</h3>
         <p>
           I'm driven by curiosity, creativity, and a desire to make the web more
@@ -42,27 +56,32 @@
           use.
         </p>
       </div>
+
+      <hr />
+
       <div class="contact">
-        <h2>Get in touch.</h2>
+        <h2>Get in touch</h2>
         <p>
-          I'm always excited to connect with other learners, developers, or
-          potential collaborators. If you'd like to chat about a project or just
-          say hi, my inbox is always open!
+          I'm always excited to connect with fellow learners, developers, or
+          collaborators. If you'd like to chat about a project or just say hi,
+          feel free to reach out!
         </p>
         <button>
-          <a href="mailto:[deepthimuthu77@gmail.com]">CONTACT ME</a>
+          <a href="mailto:deepthimuthu77@gmail.com">CONTACT ME</a>
         </button>
       </div>
-    </div>
+    </main>
+
     <footer>
       <div class="footer-links">
-        <a href="https://www.linkedin.com/in/deepthi-muthukumar-1a5825283/"
+        <a
+          href="https://www.linkedin.com/in/deepthi-muthukumar-1a5825283/"
+          target="_blank"
           >LinkedIn</a
         >
-        <a href="https://github.com/deepthimuthu77">GitHub</a>
+        <a href="https://github.com/deepthimuthu77" target="_blank">GitHub</a>
       </div>
-
-      <p class="copyright">&copy Deepthi Muthukumar. All rights reserved.</p>
+      <p class="copyright">&copy; Deepthi Muthukumar. All rights reserved.</p>
     </footer>
   </body>
 </html>
