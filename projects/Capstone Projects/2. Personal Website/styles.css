@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  box-sizing: border-box;  
+  height: 500vh;
+}
+
+.background-img{
+  width: 1900px;
+  height: 785px;
+}
