@@ -67,5 +67,4 @@
 
     - console.log(fruits.indexOf('citron'))  // returns index of element (if not -1)
 
-- ### Object Literals
-    
+- ### Object Literals (30.10)
