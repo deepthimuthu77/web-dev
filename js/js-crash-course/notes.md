@@ -1,70 +1,132 @@
 ## Introduction
+
 - alert('Hello World!'); // pop up window
 - console.log("Hello world!"); // prints in console
 - console.error('This is error') // error shows up in console
 - console.warn('This is warning') // warning shows up in console
 
 ## VARIABLE INITIALISATION
+
 - var is globally scoped --> causes conflicts
 - let is dynamically typed
 - const holds a constant value (if no need for reassignment, USE THIS! [more robust and secure])
 
-
 ## DATATYPES
+
 - typeof() can be used to determine the datatype of a variable
 
 - ### Strings
-    - const name = 'Deepthi';
-    - // Concatenation:
-        - console.log('My name is ' + name + ' and I like to code!);
 
-    - // Template String;
-        - console.log('My name is ${name} and I like to code!);
+  - const name = 'Deepthi';
+  - // Concatenation:
 
-    - // Functions and Methods
-        - s.length; -> returns length
-        - s.toUpperCase(); -> changes to Uppercase
-        - s.toLowerCase(); -> changes to Lowercase
-        - s.substring(startIndex, endIndex); -> slicing (only lower bound included)
+    - console.log('My name is ' + name + ' and I like to code!);
 
-    - // Splitting
-        - const s = 'Hello world!';
-        - console.log(s.split('')); // splits into every character 
+  - // Template String;
 
-        - const tags = 'technology, media, art, craft';
-        - console.log(s.split(', ')); // splits into every tag and can be stored in array
+    - console.log('My name is ${name} and I like to code!);
+
+  - // Functions and Methods
+
+    - s.length; -> returns length
+    - s.toUpperCase(); -> changes to Uppercase
+    - s.toLowerCase(); -> changes to Lowercase
+    - s.substring(startIndex, endIndex); -> slicing (only lower bound included)
+
+  - // Splitting
+
+    - const s = 'Hello world!';
+    - console.log(s.split('')); // splits into every character
+
+    - const tags = 'technology, media, art, craft';
+    - console.log(s.split(', ')); // splits into every tag and can be stored in array
 
 - ### Numbers
-    - const age = 30;
-    - const rating = 9.6;
+
+  - const age = 30;
+  - const rating = 9.6;
 
 - ### Boolean
-    - let flag = false;
+
+  - let flag = false;
 
 - ### null
-    - const x = null;
-    - // typeof() returns object --> ERROR!
+
+  - const x = null;
+  - // typeof() returns object --> ERROR!
 
 - ### undefined
-    - const y = undefined;
-    - let z;
+
+  - const y = undefined;
+  - let z;
 
 - ### Arrays
-    - variables that hold multiple values
 
-    - const nums = new Array(1,2,3,4,5);  // using constructor (recog. by 'new')
-    - const fruits = ['apples', 'bananas', 'citron', 10, 20]; 
+  - variables that hold multiple values
 
-    - console.log(fruits[1])  // indexing
+  - const nums = new Array(1,2,3,4,5); // using constructor (recog. by 'new')
+  - const fruits = ['apples', 'bananas', 'citron', 10, 20];
 
-    - fruits.push('dinner') // appending to array
+  - console.log(fruits[1]) // indexing
 
-    - fruits.unshift('breakfast')  // adds to the start of the array
+  - fruits.push('dinner') // appending to array
 
-    - fruits.pop() // removes the last element
+  - fruits.unshift('breakfast') // adds to the start of the array
 
-    - console.log(Array.isArray(fruits))  // to check if Array
+  - fruits.pop() // removes the last element
 
-    - console.log(fruits.indexOf('citron'))  // returns index of element (if not -1)
+  - console.log(Array.isArray(fruits)) // to check if Array
 
-- ### Object Literals (30.10)
+  - console.log(fruits.indexOf('citron')) // returns index of element (if not -1)
+
+- ### Object Literals
+
+  - key-value pairs
+
+  - const person = {
+      firstName: 'Deepthi',
+      lastName: 'Muthukumar',
+      age: 18,
+      hobbies: ['music', 'movies', 'coding', 'gaming'],
+      address: {
+              street: '405 ABC Street',
+              city: 'Chennai',
+              state: 'Tamilnadu'
+          }
+      };
+
+      console.log(person);
+      console.log(person.hobbies);
+      console.log(person.address.state);
+
+    // dectructuring
+      const {firstName, lastName, address: { city }} = person;
+
+    // adding properties
+      person.email = 'deepthi123@gmail.com';
+
+  - const todos = [
+        {
+            id: 1,
+            text: "Take out trash",
+            isCompleted: true,
+        },
+        {
+            id: 2,
+            text: "Meeting with boss",
+            isCompleted: true,
+        },
+        {
+            id: 3,
+            text: "Dentist appt.",
+            isCompleted: true,
+        },
+
+    ];
+
+    console.log(todos[1].text)
+
+  - const todoJSON = JSON.stringify(todos);
+    console.log(todoJSON);
+
+
