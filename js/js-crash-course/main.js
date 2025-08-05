@@ -16,7 +16,8 @@ const todos = [
   },
 ];
 
-// console.log(todos[1].text);
+const todoText = todos.map(function(todo) {
+    return todo.text
+});
 
-const todoJSON = JSON.stringify(todos);
-console.log(todoJSON);
+console.log(todoText);

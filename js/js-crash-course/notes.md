@@ -84,43 +84,43 @@
   - key-value pairs
 
   - const person = {
-      firstName: 'Deepthi',
-      lastName: 'Muthukumar',
-      age: 18,
-      hobbies: ['music', 'movies', 'coding', 'gaming'],
-      address: {
-              street: '405 ABC Street',
-              city: 'Chennai',
-              state: 'Tamilnadu'
-          }
-      };
+    firstName: 'Deepthi',
+    lastName: 'Muthukumar',
+    age: 18,
+    hobbies: ['music', 'movies', 'coding', 'gaming'],
+    address: {
+    street: '405 ABC Street',
+    city: 'Chennai',
+    state: 'Tamilnadu'
+    }
+    };
 
-      console.log(person);
-      console.log(person.hobbies);
-      console.log(person.address.state);
+    console.log(person);
+    console.log(person.hobbies);
+    console.log(person.address.state);
 
     // dectructuring
-      const {firstName, lastName, address: { city }} = person;
+    const {firstName, lastName, address: { city }} = person;
 
     // adding properties
-      person.email = 'deepthi123@gmail.com';
+    person.email = 'deepthi123@gmail.com';
 
   - const todos = [
-        {
-            id: 1,
-            text: "Take out trash",
-            isCompleted: true,
-        },
-        {
-            id: 2,
-            text: "Meeting with boss",
-            isCompleted: true,
-        },
-        {
-            id: 3,
-            text: "Dentist appt.",
-            isCompleted: true,
-        },
+    {
+    id: 1,
+    text: "Take out trash",
+    isCompleted: true,
+    },
+    {
+    id: 2,
+    text: "Meeting with boss",
+    isCompleted: true,
+    },
+    {
+    id: 3,
+    text: "Dentist appt.",
+    isCompleted: true,
+    },
 
     ];
 
@@ -129,4 +129,53 @@
   - const todoJSON = JSON.stringify(todos);
     console.log(todoJSON);
 
+- ### Loops
 
+      // for loop
+      for(let i=0 ; i<=10 ; i++){
+          console.log(`For Loop Number: ${i}`);
+      }
+
+      // traversing through obe=ject literals
+      for(let i=0 ; i < todos.length ; i++){
+          console.log(todos[i].text);
+      }
+
+      for(let todo of todos){
+          console.log(todo.id);
+      }
+
+      // high order array method (forEach, map, filter)
+      - forEach
+      todos.forEach(function(todo) {
+      console.log(todo.text);
+      });
+
+      - map ==> returns array
+      const todoText = todos.map(function(todo) {
+      return todo.text
+      });
+
+      console.log(todoText);
+
+      - filter 
+      const todoCompleted = todos.map(function(todo) {
+      return todo.isCompleted === true;
+      });
+      console.log(todoCompleted);
+
+      // to chain on with map,
+      const todoCompleted = todos.map(function(todo) {
+      return todo.isCompleted === true;
+      }).map(function(todo){
+        return todo.text;
+      })
+      console.log(todoCompleted);
+
+
+    // while
+    let i = 0;
+    while(i>10){
+        console.log(`For Loop Number: ${i}`);
+        i++;
+    }
