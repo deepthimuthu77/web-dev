@@ -232,3 +232,11 @@
     const timeTwo = num => num*2;
 
     todos.forEach(todo) => console.log(todo);
+
+- ### OOPS
+  - // Constructor function
+  - function Person(fName, lName, dob){
+        this.fName = fName;
+        this.lName = lName;
+        this.dob = new Date(dob);
+  }
