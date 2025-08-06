@@ -239,4 +239,7 @@
         this.fName = fName;
         this.lName = lName;
         this.dob = new Date(dob);
+
+        // methods
+        
   }
